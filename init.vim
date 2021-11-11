@@ -3,7 +3,8 @@
 call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
-Plug 'joshdick/onedark.vim' 		"tema
+
+Plug 'morhetz/gruvbox'          "tema nuevo
 Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
 Plug 'vim-airline/vim-airline'		"diseño de la barra en la cual se muestran los modos, la linea, etc.
@@ -31,8 +32,8 @@ set clipboard=unnamed			"para poder utilizar el portapapeles del sistema operati
 
 
 "configuracion del tema
-set termguicolors 			"activa el true color en la terminal
-colorscheme onedark 			"activar el tema onedark
+colorscheme gruvbox
+set background=dark 
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -51,6 +52,8 @@ let g:airline_theme='onedark'	"el tema de airline
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
 map <C-n> :NERDTreeToggle<CR>
 
+"CONFIGURACION DE AUTOCOMPLETADO COC 
+let g:python3_host_prog= 'D:\Users\kraud\AppData\Local\Programs\Python\Python310\python.exe'
 
 
 "configuracion por defecto de coc
